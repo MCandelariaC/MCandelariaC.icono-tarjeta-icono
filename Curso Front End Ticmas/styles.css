@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+
+/*-----------VARS---------------------*/
+
+:root {
+  --font-family: "Roboto", sans-serf;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: #fcfcfc;
+  --primary-color: #9999ff;
+  --secondary-color: #66ff99;
+  --primary-shadow: #8b8eaf;
+  --secondary-shadow: #a17a69;
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+nav {
+    position: sticky;  /*permanece en sección sup*/
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-color);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav h1 {
+    color: var(--primary-color);
+}
+  
+nav a {
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+  
+nav ul {
+    display: flex;
+    gap: 1.9rem;
+}
+  
+nav ul li {
+    font-weight: var(--bold-font);
+}
+
+.imagen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    max-width: 68.75rem;
+    margin: auto;    
+}
+
+
+.img-persona {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    border-color: var(--primary-color);
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;    
+}
+  
+.bio {
+    width: 25rem;
+    padding: 0.625rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);    
+}
+  
+.bio h1 {
+    margin-bottom: var(--bottom-margin); 
+}
+  
+.bio p {
+    line-height: var(--line-height);
+    padding: 0.3rem 0;
+}
+
+.perfil {
+    background-color: var(--bg-color);
+    padding: 1rem 6rem;
+}
+  
+.perfil h2 {
+    margin-bottom: var(--bottom-margin);
+    text-align: center;
+}
+  
+.perfil p {
+    line-height: var(--line-height);
+    padding: 0.4rem;
+}
+
+/*-----------HABILIDADES---------------------*/
+
+.habilidades {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+  
+.encabezado-habilidad {
+    margin-bottom: 1rem;
+}
+  
+.contenedor-habilidad img {
+    padding: 1.25rem;
+}
+  
+.icono {
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.tarjeta-icono {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+/*-----------EXPERIENCIA LABORAL---------------------*/
+
+.experienciaLaboral {
+    background-color: var(--bg-color);
+    padding: 32px 0;
+    margin-top: 2rem;      
+}
+    
+.contenedor-de-trabajos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 55rem;
+    padding: 1rem;
+    padding: 0.4rem;    
+}
+
+.titulo-de-trabajos {
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-bottom: var(--bottom-margin);      
+}
+   
+.detalles-de-trabajo {
+    margin-bottom: var(--bottom-margin);    
+}
+  
+.tarjeta-de-trabajo {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;        
+}
+
+/*-----------FORMULARIO CONTÁCTAME---------------------*/
+
+.contacto {
+    margin-top: 2rem;
+}
+  
+.contacto h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+}
+  
+.contenedor-formulario-contacto {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938rem;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px var(--secondary-shadow); 
+    line-height: 2.7em;
+    font-weight: var(--bold-font);
+    color: black;
+    min-height: 6.25rem;
+    font-size: 14px;
+}
+
+.contenedor-formulario-contacto .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset var(--primary-color);
+    font-size: 0.875rem;
+    outline: none;
+}
+
+.input-field::placeholder {
+    padding: 0.5rem;
+    color: var(--primary-color);
+}
+
+.boton-enviar {
+    width: 10%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--primary-color);
+    border: 4px solid var(--secondary-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: var(--bold-font);
+    transition: var(--transition);
+}
+
+.boton-enviar:hover {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+
+/*-----------REDES SOCIALES---------------------*/
+
+.sociales {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 1%;
+    bottom: 50%;
+}
+  
+.socicon {
+    width: 2rem;
+    height: 2rem;
+}
+
+/*-----------FOOTER---------------------*/
+
+footer {
+    background-color: var(--bg-color);
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;       
+}
+
+/*-----------VOLVER AL INICIO---------------------*/
+
+.desplazarse-hacia-arriba {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+}
+  
+.flecha-arriba {
+    width: 3rem;
+    height: 3rem;
+}
+
+/*-----------CONSULTAS RESPONSIVE---------------------*/
+
+@media screen and (max-width: 720px) {
+
+    /* Tbalets y Celulares / los cambios se ven si es pantalla con ancho max de 720px */
+}
+
+/*420 celulares chicos*/
+  
+nav {
+    padding: 1.5rem 1rem;   /*padding barra de nav*/
+}
+
+/* Mobile phones: */
+
+[class*="col-"] {
+  width: 100%;
+}
+/**/
+@media only screen and (min-width: 600px) {
+
+  /* Tablets: */
+
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* For desktop: */
+
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
